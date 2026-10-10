@@ -166,9 +166,9 @@ button{ font:inherit; color:inherit; }
 }
 .site-header.scrolled{ border-bottom-color:var(--line-dark); background:rgba(10,12,15,.92); }
 
-.header-inner{ display:flex; align-items:center; gap:2rem; }
+.header-inner{ display:flex; align-items:center; gap:2rem; min-width:0; }
 
-.brand{ display:flex; align-items:center; gap:.62rem; flex-shrink:0; }
+.brand{ display:flex; align-items:center; gap:.62rem; flex-shrink:0; min-width:0; }
 .brand-mark{ width:30px; height:30px; color:var(--brass); flex-shrink:0; }
 .brand-mark svg{ width:100%; height:100%; }
 .brand-text{
@@ -618,6 +618,11 @@ a.contact-line:hover .contact-v{ color:var(--brass); }
 
 @media (max-width:600px){
   .wrap{ padding-inline:18px; }
+  .header-inner{ gap:.7rem; }
+  .header-actions{ gap:.7rem; }
+  .brand-mark{ width:26px; height:26px; }
+  .brand-text{ font-size:.96rem; gap:.22rem; }
+  .btn-sm{ padding:.58rem .95rem; font-size:.82rem; }
   .hero{ padding-top:2.4rem; }
   .stat-row{ grid-template-columns:1fr 1fr; gap:.75rem; }
   .stat-card{ padding:1.15rem 1rem; }
@@ -631,6 +636,11 @@ a.contact-line:hover .contact-v{ color:var(--brass); }
   .demo-foot .btn{ width:100%; }
   .hero-cta .btn{ width:100%; }
   .footer-base{ flex-direction:column; }
+}
+
+@media (max-width:470px){
+  /* the wordmark is the first thing to go so the menu button always fits */
+  .brand-text{ display:none; }
 }
 
 @media (max-width:400px){
