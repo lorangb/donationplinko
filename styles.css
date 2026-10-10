@@ -264,6 +264,7 @@ button{ font:inherit; color:inherit; }
   font-family:var(--font-serif); font-style:italic; font-weight:400;
   color:var(--brass); letter-spacing:-.015em;
 }
+.nb{ white-space:nowrap; }
 .hero-sub{ font-size:1.09rem; color:var(--text-dim); margin:1.4rem 0 0; max-width:53ch; }
 
 .hero-cta{ display:flex; gap:.8rem; flex-wrap:wrap; margin:2rem 0 0; }
