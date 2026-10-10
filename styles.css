@@ -250,15 +250,14 @@ button{ font:inherit; color:inherit; }
 }
 .hero-inner{
   position:relative;
-  display:grid; grid-template-columns:1.06fr .94fr;
+  display:grid; grid-template-columns:1.12fr .88fr;
   gap:clamp(2rem,4vw,4rem); align-items:center;
 }
 
 .hero h1{
   font-family:var(--font-display); font-weight:900;
-  font-size:clamp(2.35rem,5vw,4.1rem);
-  line-height:1.04; letter-spacing:-.035em; margin:.6rem 0 0; color:#fff;
-  text-wrap:balance;
+  font-size:clamp(2.2rem,4.6vw,3.6rem);
+  line-height:1.06; letter-spacing:-.035em; margin:.6rem 0 0; color:#fff;
 }
 .hero h1 em{
   font-family:var(--font-serif); font-style:italic; font-weight:400;
