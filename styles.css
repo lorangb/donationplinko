@@ -256,8 +256,9 @@ button{ font:inherit; color:inherit; }
 
 .hero h1{
   font-family:var(--font-display); font-weight:900;
-  font-size:clamp(2.5rem,5.4vw,4.35rem);
-  line-height:1.02; letter-spacing:-.035em; margin:.6rem 0 0; color:#fff;
+  font-size:clamp(2.35rem,5vw,4.1rem);
+  line-height:1.04; letter-spacing:-.035em; margin:.6rem 0 0; color:#fff;
+  text-wrap:balance;
 }
 .hero h1 em{
   font-family:var(--font-serif); font-style:italic; font-weight:400;
